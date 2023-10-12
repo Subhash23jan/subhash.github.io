@@ -16,7 +16,7 @@ body{
     display: flex;
     width: 100%;
     align-items: end;
-    justify-content:space-between;
+    justify-content:end;
     box-shadow: .001px .3px .03px white;
 }
 #email{
