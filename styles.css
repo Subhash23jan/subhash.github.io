@@ -2,7 +2,7 @@ body{
     background-color: black;
     color: white;
     height: max-content;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 .navbar{
@@ -19,17 +19,11 @@ body{
     justify-content:end;
     box-shadow: .001px .3px .03px white;
 }
-#email{
-    font-size: 10px;
-}
-#email:hover{
-    box-shadow: none;
-    scale: 1.4;
-}
  .navbar ul {
     list-style-type: none;
     display: flex;
     align-self: center;
+    align-items:end;
     justify-content: flex-end;
 }
 .navbar a {
