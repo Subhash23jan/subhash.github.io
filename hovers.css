@@ -1,0 +1,22 @@
+.cards{
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    height: 250px;
+    align-items: center;
+    text-align: center;
+    background-color:white;
+    border: 1px solid white;
+}
+.cards img{
+    height: 180%;
+    width: 120%;
+    left: auto;
+    justify-self: center;
+    align-self: center;
+    background-size: cover;
+    position: absolute;
+    background-origin:inherit;
+    background-repeat: no-repeat;
+}
