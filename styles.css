@@ -1,0 +1,198 @@
+body{
+    background-color: black;
+    color: white;
+    height: max-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.navbar{
+    background-color:black;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    padding-top: 10px;
+    z-index: 999;
+    top: 0;
+    display: flex;
+    width: 100%;
+    align-items: end;
+    justify-content:end;
+    box-shadow: .001px .3px .03px white;
+}
+ .navbar ul {
+    list-style-type: none;
+    display: flex;
+    align-self: center;
+    align-items:end;
+    justify-content: flex-end;
+}
+.navbar a {
+    border-radius: 12px;
+    padding: 5px 30px;
+    width: 60px;
+    font-size: 16px;
+    margin: 70px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.navbar a:hover{
+    scale: 1.1;
+    box-shadow: .2px .7px 5px cyan;
+}
+.profile{
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+.profile img{
+    margin-top: 110px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.profile p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#myline{
+    background-image: linear-gradient(to right, white, rgb(0, 0, 0)); /* Define your gradient colors and direction */
+    -webkit-background-clip: text; /* For webkit browsers */
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px; 
+}
+#mylink{
+    display: flex;
+    justify-content: center;
+}
+#mylink a:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+.skills{
+    margin-top: 10px;
+    background-color:rgb(18, 14, 14);
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.skills p:hover{
+    scale: 1.1;
+    cursor:default ;
+}
+.projects{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 150px;
+}
+.projects div{
+    margin-right: 70px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: start;
+    height: 250px;
+    background-color:rgb(18, 14, 14);
+    border: 1px solid rgb(38, 36, 36);
+    /* box-shadow: .1px .2px 1px .2px white; */
+}
+.projects-card{
+    margin-right: 50px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: start;
+    height: 250px;
+    background-color:rgb(18, 14, 14);
+    border: 1px solid rgb(38, 36, 36);
+    /* box-shadow: .1px .2px 1px .2px white; */
+}
+.projects-card:hover{
+    scale: 1.05;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.projects div p{
+    color: rgb(167, 163, 163);
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.project-title{
+     color: rgb(230, 223, 223);
+     margin-left: 40px;
+     font-size:16px
+}
+
+.details{
+    font-size: 2px;
+    display: block;
+    text-align: start;
+    justify-content: start;
+    align-items:start;
+}
+#link{
+    color: white;
+    font-size: 22px;
+}
+#link:hover{
+    scale: 1.2;
+}
+.about{
+    font-size: 17px;
+    margin-top: 30px;
+    margin: 30px 60px 40px;
+    padding: 10px 30px;
+    background-color:rgb(18, 14, 14);
+}
+.about p{
+    color: rgb(214, 207, 207);
+}
+.about:hover{
+    box-shadow:.2px .7px 5px 1px white;
+    scale: 1.05;
+    cursor: pointer;
+}
+.connect{
+    height: 100px;
+    margin: 20px 40px 20px;
+    background-color:rgb(18, 14, 14);
+    display: flex;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.connect:hover{
+    scale: 1.05;
+}
+.connect a{
+    width: 50px;
+    justify-content: space-around;
+    text-decoration: none;
+    font-size: 30px;
+}
+.connect a:hover{
+    scale: 1.2;
+}
+.title{
+    font-size: inherit;
+}
