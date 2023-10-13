@@ -6,7 +6,7 @@ body{
 
 }
 .navbar{
-    background-color:black;
+    background-color:rgb(4, 4, 33);
     height: 60px;
     text-align: center;
     position: fixed;
@@ -27,8 +27,8 @@ body{
     justify-content: flex-end;
 }
 .navbar a {
-    border-radius: 12px;
-    padding: 5px 30px;
+    border-radius: 6px;
+    padding: 5px 15px;
     width: 60px;
     font-size: 16px;
     margin: 70px;
@@ -38,7 +38,7 @@ body{
 }
 .navbar a:hover{
     scale: 1.1;
-    box-shadow: .2px .7px 5px cyan;
+    box-shadow: .2px .7px 1.5px 0.5px cyan;
 }
 .profile{
     text-align: center;
@@ -180,9 +180,6 @@ body{
     text-align: center;
     align-items: center;
     justify-content: space-around;
-}
-.connect:hover{
-    scale: 1.05;
 }
 .connect a{
     width: 50px;
