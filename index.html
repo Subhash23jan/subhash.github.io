@@ -156,11 +156,11 @@
         title.addEventListener('mouseover', () => {
             title.style.color = '#0077B5';
             title.style.cursor = 'pointer';
-            let imageIndex = 1;
+         //   let imageIndex = 1;
             const image = document.createElement('img');
             image.src = projectsImages[index][0];
             newCard.appendChild(image);
-            projectCards[index].replaceChild(newCard, divElement[index]);
+          //  projectCards[index].replaceChild(newCard, divElement[index]);
             setInterval(()=>{
                 image.src = projectsImages[index][imageIndex];
                 imageIndex = (imageIndex + 1) % projectsImages[index].length  ;
@@ -170,7 +170,7 @@
         title.addEventListener('mouseout', () => {
             title.style.color = 'rgb(230, 223, 223)';
             title.style.cursor = 'auto';
-            projectCards[index].replaceChild( divElement[index],newCard);
+           // projectCards[index].replaceChild( divElement[index],newCard);
 
         });
     });
