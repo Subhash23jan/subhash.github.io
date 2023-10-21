@@ -3,18 +3,21 @@
     border-radius: 15px;
     text-align: center;
     color: white;
+
     height: 250px;
     align-items: center;
     text-align: center;
-    background-color:white;
-    border: 1px solid white;
+    background-color:white;  
 }
 .cards img{
     height: 180%;
     width: 120%;
     left: auto;
     justify-self: center;
+    border:2px solid black;
     align-self: center;
+    border-radius: 20px;
+    box-shadow: .2px .3px 4px  white;
     background-size: cover;
     position: absolute;
     background-origin:inherit;
