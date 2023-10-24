@@ -78,7 +78,7 @@ body{
     justify-content: center;
 }
 #mylink a:hover {
-    scale: 1.1;
+    scale: 1.3;
     cursor: pointer;
 }
 .skills{
@@ -93,14 +93,16 @@ body{
 
 }
 .skills p:hover{
-    scale: 1.1;
+    scale: 1.15;
     cursor:default ;
 }
 .projects{
+    flex-wrap: wrap;
+    width: 100%;
     padding-top: 20px;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+
     margin-left: 40px;
     margin-right: 40px;
     margin-bottom: 150px;
@@ -117,6 +119,7 @@ body{
 }
 .projects-card{
     margin-right: 50px;
+     margin-top: 80px;
     width: 200px;
     border-radius: 15px;
     text-align: start;
@@ -141,7 +144,6 @@ body{
      margin-left: 40px;
      font-size:16px
 }
-
 .details{
     font-size: 2px;
     display: block;
