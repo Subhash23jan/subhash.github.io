@@ -42,8 +42,8 @@
             <span class="material-symbols-outlined" style="color: white; margin-top:4px">outbound</span>
         </a>
     </div>
-    <p style="margin-left: 30px;">
-        SKILLS
+    <p class="sidehead" title="you can't grab it">
+        Skills
     </p>
     <div class="skills">
         <p>HTML CSS JS</p>
@@ -57,7 +57,7 @@
             Developed some sample <br> applications to showcase my work and <br> to gain experience
         </p>
     </div>
-    <p style="margin-left: 30px;">
+    <p class="sidehead" title="you can't grab it">
         Projects
     </p>
     <div class="projects" id="myProjects">
@@ -100,7 +100,8 @@
             </div>
         </div>
         <div class="projects-card">
-            <p style=" color: rgb(230, 223, 223);margin-left: 40px;font-size:16px" class="title">Next project(under process)</p>
+            <p style=" color: rgb(230, 223, 223);margin-left: 40px;font-size:16px" class="title">Next project(under
+                process)</p>
             <div class="details">
                 <p>Frontentd : react</p><br>
                 <p>Backend : Express.js</p><br>
@@ -123,6 +124,9 @@
         </div> -->
 
     </div>
+    <p class="sidehead" title="you can't grab it">
+        About me
+    </p>
     <div class="about" id="aboutMe">
         <p title="Thank you for reading about me..🥺💖">
             Greetings to all.This is Subhash D, who is curious and wants to learn anything.I'm an extremely committed
@@ -142,7 +146,7 @@
         </p>
     </div>
     <div class="connect" id="links">
-        <a href="" class="fa fa-envelope" style="color: rgb(121, 74, 74);"></a>
+        <a href="mailto:your.subhash613d@gmail.com" class="fa fa-envelope" style="color: rgb(121, 74, 74);"></a>
         <a href="https://www.linkedin.com/in/subhash-d/" class="fa fa-linkedin" style="color: rgb(21, 55, 211);"
             target="_blank"></a>
         <a href="https://github.com/Subhash23jan/" target="_blank" class="fa fa-github"
@@ -154,47 +158,7 @@
         <a href="https://leetcode.com/subhash613d/" target="_blank" style="color: white; font-size:16px">Leetcode</a>
 
     </div>
-    <script>
-        alert('please hover on the title of the project to see the magic');
-        const projectCards = document.querySelectorAll('.projects-card');
-        const divElement = document.querySelectorAll('.projects-card .details');
-        const projectTitles = document.querySelectorAll('.projects-card .title');
-        const projectsImages = [
-            ['amazon1.jpg', 'amazon2.jpg', 'amazon3.jpg', 'amazon4.jpg', 'amazon5.jpg', 'amazon6.jpg'],
-            ['instagram1.jpg', 'instagram2.jpg', 'instagram3.jpg', 'instagram4.jpg'],
-            ['food1.jpg', 'food2.jpg', 'food3.jpg', 'food4.jpg', 'food5.jpg', 'food6.jpg', 'food7.jpg']
-        ];
-        const newCard = document.createElement('div');
-
-        newCard.classList.add('cards');
-        projectTitles.forEach((title, index) => {
-            const text = title.textContent;
-            title.addEventListener('mouseover', () => {
-                title.style.color = '#0077B5';
-                title.style.cursor = 'pointer';
-                let imageIndex = 1;
-                const image = document.createElement('img');
-                image.src = projectsImages[index][0];
-                newCard.appendChild(image);
-                projectCards[index].replaceChild(newCard, divElement[index]);
-                setInterval(() => {
-                    image.src = projectsImages[index][imageIndex];
-                    imageIndex = (imageIndex + 1) % projectsImages[index].length;
-                }, 1500);
-            });
-
-            title.addEventListener('mouseout', () => {
-                title.style.color = 'rgb(230, 223, 223)';
-                title.style.cursor = 'auto';
-                title.textContent = text;
-                projectCards[index].replaceChild(divElement[index], newCard);
-
-            });
-        });
-
-
-
-
+    <script src="script.js">
     </script>
 </body>
 
