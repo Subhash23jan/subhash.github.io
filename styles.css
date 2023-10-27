@@ -56,6 +56,11 @@ body{
     justify-content: center;
     align-items: center;
 }
+.profile img:hover{
+    scale: 1.1;
+    box-shadow: .1px .2px 1px .2px white;
+
+}
 .profile p{
     display: flex;
     justify-content: center;
@@ -115,7 +120,7 @@ body{
     height: 250px;
     background-color:rgb(18, 14, 14);
     border: 1px solid rgb(38, 36, 36);
-    /* box-shadow: .1px .2px 1px .2px white; */
+    box-shadow: .1px .2px 1px .6px white;
 }
 .projects-card{
     margin-right: 50px;
@@ -194,4 +199,19 @@ body{
 }
 .title{
     font-size: inherit;
+}
+.sidehead{
+    margin-left: 30px;
+    color: white;
+}
+@keyframes sideHeadAnimation {
+    0% { opacity: 1;  }
+  100% { opacity: 0;  }
+   
+    
+}
+.sidehead:hover{
+    margin-left: 30px;
+    cursor: grab;
+    animation: sideHeadAnimation 3s ease  both ;
 }
