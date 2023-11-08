@@ -3,21 +3,22 @@
     border-radius: 15px;
     text-align: center;
     color: white;
-
+    align-self: center;
     height: 250px;
     align-items: center;
     text-align: center;
-    background-color:white;  
+    margin-right: 200px;
+    background-color:black;  
 }
 .cards img{
-    height: 180%;
+    height: 175%;
     width: 120%;
     left: auto;
     justify-self: center;
     border:2px solid black;
     align-self: center;
     border-radius: 20px;
-    box-shadow: .2px .3px 4px  white;
+    box-shadow: .2px .3px 4px  rgb(203, 196, 196);
     background-size: cover;
     position: absolute;
     background-origin:inherit;
