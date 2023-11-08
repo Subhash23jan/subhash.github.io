@@ -3,15 +3,14 @@
         const divElement = document.querySelectorAll('.projects-card .details');
         const projectTitles = document.querySelectorAll('.projects-card .title');
         const projectsImages = [
-            ['amazon1.jpg', 'amazon2.jpg', 'amazon3.jpg', 'amazon4.jpg', 'amazon5.jpg', 'amazon6.jpg'],
-            ['instagram1.jpg', 'instagram2.jpg', 'instagram3.jpg', 'instagram4.jpg'],
+            ['amazon1.jpg', 'amazon2.jpg', 'amazon3.jpg', 'amazon4.jpg', 'amazon5.jpg', 'amazon6.jpg', 'amazon7.jpg', 'amazon8.jpg', 'amazon9.jpg', 'amazon10.jpg', 'amazon11.jpg', 'amazon12.jpg', 'amazon13.jpg', 'amazon14.jpg', 'amazon15.jpg', 'amazon16.jpg'],
+            ['instagram1.jpg','instagram2.jpg','instagram3.jpg','instagram4.jpg','instagram5.jpg','instagram6.jpg','instagram7.jpg','instagram8.jpg','instagram9.jpg','instagram10.jpg','instagram11.jpg','instagram12.jpg',],
             ['food1.jpg', 'food2.jpg', 'food3.jpg', 'food4.jpg', 'food5.jpg', 'food6.jpg', 'food7.jpg']
-        ];
-        const newCard = document.createElement('div');
+];
+ const newCard = document.createElement('div');
 
         newCard.classList.add('cards');
         projectTitles.forEach((title, index) => {
-            const text = title.textContent;
             title.addEventListener('mouseover', () => {
                 title.style.color = '#0077B5';
                 title.style.cursor = 'pointer';
@@ -29,17 +28,29 @@
             title.addEventListener('mouseout', () => {
                 title.style.color = 'rgb(230, 223, 223)';
                 title.style.cursor = 'auto';
-                title.textContent = text;
                 projectCards[index].replaceChild(divElement[index], newCard);
 
             });
         });
+// const sideHead = document.querySelectorAll(".sidehead");
+// sideHead.addEventListener('mouseover', () => {
+//     setTimeout(() => {
+//         sideHead.style.cursor = 'auto';
+//     }, 3000);
+// });
+const navbar = document.querySelector(".navbar");
+let lastScrollY = window.scrollY;
+ window.addEventListener("scroll", () => {
+    if (lastScrollY < window.scrollY) {
+        navbar.classList.add("nav--hidden");
+        console.log('going down');
+    } else {
+      navbar.classList.remove("nav--hidden");
+    }
 
-const sideHead = document.querySelectorAll(".sidehead");
-sideHead.addEventListener('mouseover', () => {
-    setTimeout(() => {
-        sideHead.style.cursor = 'auto';
-    }, 3000);
-});
+     lastScrollY = window.scrollY;
+ });
+
+
 
 
