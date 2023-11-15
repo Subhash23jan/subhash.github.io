@@ -127,7 +127,7 @@ title{
 }
 .projects-card{
     margin-right: 50px;
-    margin-top: 90px;
+    margin-top: 50px;
     width: 200px;
     border-radius: 15px;
     align-items: center;
@@ -135,11 +135,13 @@ title{
     height: 280px;
     background-color:rgb(18, 14, 14);
     border: 1px solid rgb(38, 36, 36);
-    box-shadow: .1px .2px 1px .2px white; 
+    transition: 500ms ease-in-out ;
+    box-shadow: .1px .2px 1px .7px white;  
 }
 .projects-card:hover{
     scale: 1.05;
     cursor: pointer;
+    
     border-radius: 20px;
 }
 .projects p{
@@ -178,8 +180,9 @@ title{
     color: rgb(214, 207, 207);
 }
 .about:hover{
-    box-shadow:.2px .7px 5px 1px white;
+    box-shadow: .1px .2px 1px .7px white; 
     scale: 1.05;
+    transition: 500ms ease-in-out ;
     cursor: pointer;
 }
 .connect{
@@ -207,6 +210,7 @@ title{
 .sidehead{
     margin-left: 30px;
     color: white;
+    font-size: 22px;
 }
 @keyframes sideHeadAnimation {
     0% { opacity: 1;  }
