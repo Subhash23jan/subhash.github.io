@@ -128,31 +128,36 @@ title{
 .projects-card{
     margin-right: 50px;
     margin-top: 50px;
-    width: 200px;
+    width: 220px;
     border-radius: 15px;
     align-items: center;
     color: black;
     height: 280px;
     background-color:rgb(18, 14, 14);
-    border: 1px solid rgb(38, 36, 36);
+    border:none;
     transition: 500ms ease-in-out ;
-    box-shadow: .1px .2px 1px .7px white;  
+    
 }
 .projects-card:hover{
     scale: 1.05;
-    cursor: pointer;
-    
+    cursor: pointer; 
     border-radius: 20px;
+    box-shadow: 0 2px 32px 0.01px rgba(59, 56, 56, 0.992);
+}
+.projects-card:hover .title{
+    font-size: 25px;
 }
 .projects p{
     color: rgb(167, 163, 163);
     font-size: 13px;
     font-weight: bold;
-    margin-left: 30px;
+
+    text-align: center;
+    justify-content: center;
 }
 .project-title{
      color: rgb(230, 223, 223);
-     margin-left: 40px;
+   
      font-size:16px
 }
 .details{
@@ -206,6 +211,8 @@ title{
 }
 .title{
     font-size: inherit;
+    margin-bottom: 25px;
+    text-align: center;
 }
 .sidehead{
     margin-left: 30px;
