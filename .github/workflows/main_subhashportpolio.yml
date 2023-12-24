@@ -64,4 +64,4 @@ jobs:
         with:
           app-name: 'SubhashPortpolio'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_129C0DE60A074986BE2D0E06CDA08142 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2C651E15263B41959285DE4134EF0EC7 }}
